@@ -1,0 +1,330 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block head_title%}   JustVee.us {% endblock%}
+  {% block extra_head %} {% endblock%}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'shirling:home' %}">JustVee.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="{% url 'shirling:home' %}" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+            </div>
+          </li>
+          <li class="nav-item"><a href="{% url 'shirling:about' %}" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{% url 'shirling:blog' %}" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="{% url 'shirling:contact' %}" class="nav-link">Contact</a></li>
+          <li class="nav-item cta cta-colored"><a href="{% url 'shirling:cart' %}" class="nav-link"><span
+                class="icon-shopping_cart"></span>[0]</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+<!-- <body> -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-light-2" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="index-2.html">Modist</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu
+</button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a href="index-2.html" class="nav-link">Home</a></li>
+<li class="nav-item dropdown active">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+<div class="dropdown-menu" aria-labelledby="dropdown04">
+<a class="dropdown-item" href="shop.html">Shop</a>
+<a class="dropdown-item" href="product-single.html">Single Product</a>
+<a class="dropdown-item" href="cart.html">Cart</a>
+<a class="dropdown-item" href="checkout.html">Checkout</a>
+</div>
+</li>
+<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+<li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+</ul>
+</div>
+</div>
+</nav> -->
+
+<div class="hero-wrap hero-bread" style="background-image: url('images/bg_6.jpg');">
+<div class="container">
+<div class="row no-gutters slider-text align-items-center justify-content-center">
+<div class="col-md-9 ftco-animate text-center">
+<h1 class="mb-0 bread">Collection</h1>
+<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'shirling:home' %}">Home</a></span> <span>Product</span></p>
+</div>
+</div>
+</div>
+</div>
+<section class="ftco-section bg-light">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-1.jpg' %}" alt="Colorlib Template">
+<span class="status">30%</span>
+ </a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-2.jpg' %}" alt="Colorlib Template">
+<span class="status">New Arrival</span>
+</a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-3.jpg' %}" alt="Colorlib Template"></a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-4.jpg' %}" alt="Colorlib Template"></a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-5.jpg' %}" alt="Colorlib Template"></a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-6.jpg' %}" alt="Colorlib Template"></a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-7.jpg' %}" alt="Colorlib Template"></a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm col-md-6 col-lg-3 ftco-animate">
+<div class="product">
+<a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/product-6.jpg' %}" alt="Colorlib Template">
+<span class="status">Best Sellers</span>
+</a>
+<div class="text py-3 px-3">
+<h3><a href="#">Young Woman Wearing Dress</a></h3>
+<div class="d-flex">
+<div class="pricing">
+<p class="price"><span>$120.00</span></p>
+</div>
+<div class="rating">
+<p class="text-right">
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+<span class="ion-ios-star-outline"></span>
+</p>
+</div>
+</div>
+<hr>
+<p class="bottom-area d-flex">
+<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-5">
+<div class="col text-center">
+<div class="block-27">
+<ul>
+<li><a href="{% url 'shirling:product' %}">&lt;</a></li>
+<li class="active"  ><span>1</span></li>
+<!-- <li><a href="#">2</a></li> -->
+<li><a href="{% url 'shirling:product' %}">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li><a href="#">&gt;</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
